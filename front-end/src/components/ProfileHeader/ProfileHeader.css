@@ -1,0 +1,20 @@
+.profile__header {
+    background-color: #FF4F5A;
+}
+.profile__header .df_jscpb_ai {
+    padding: 10px;
+}
+.profile__name {
+    color: #fff;
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+.profile__header__account{
+    margin-right: 100px;
+}
+
+.profile__img img {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}

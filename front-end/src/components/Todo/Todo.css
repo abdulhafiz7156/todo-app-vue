@@ -1,0 +1,31 @@
+.todo__sidebar {
+    background-color: #F9F9F9;
+    height: 90vh;
+    width: 270px;
+}
+
+.links {
+    padding-top: 30px;
+}
+
+.links div {
+    margin-top: 15px;
+    width: 120px;
+    cursor: pointer;
+}
+.links p {
+    margin-left: 10px;
+}
+
+.sidebar__active__link p {
+    color: #FF4F5A;
+}
+
+.sidebar__active__link2 path {
+    fill: #FF4F5A;
+}
+
+
+.links div img svg{
+    fill: #FF4F5A;
+}

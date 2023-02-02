@@ -1,0 +1,18 @@
+
+
+.header__div{
+    padding-top: 80px;
+}
+
+.header__login__and__signup a {
+    font-family: 'Rosario', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+}
+.header__login__and__signup div {
+    padding-right: 25px;
+}
+.active__header_a {
+    color: #FF4F5A;
+}

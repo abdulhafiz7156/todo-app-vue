@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.df_jsc {
+    display: flex;
+    justify-content: center;
+}
+
+.df_ai {
+    display: flex;
+    align-items: center;
+}
+.df{
+    display: flex;
+}
+
+.df_jsc_ai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.df_jscpb_ai {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.df_jscend_ai {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.base__button__in__home__page{
+    font-family: 'Rosario', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #FF4F5A;
+    padding: 10px 20px;
+    border: none;
+    cursor:pointer;
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.apply {
+    background-color: #FF4F5A;
+    font-family: "Rosario", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    height: 39px;
+    width: 120px;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+}
+.cancel {
+    border: 2px solid #FF4F5A;
+    font-family: "Rosario", sans-serif;
+    color: #FF4F5A;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 39px;
+    width: 120px;
+    border-radius: 5px;
+    background: transparent;
+    margin: 5px 0 0 0;
+}
+
+.minLengthPassword {
+    color: #FF4F5A;
+    font-family: sans-serif !important;
+    font-size: 15px !important;
+}
+
+.active__password {
+    border-color: #FF4F5A !important;
+}

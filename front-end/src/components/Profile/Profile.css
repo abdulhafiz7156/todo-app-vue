@@ -1,0 +1,52 @@
+.profile__sidebar {
+    height: 90vh;
+    width: 270px;
+    background: #F9F9F9;
+}
+.active {
+    color: #FF4F5A;
+}
+.profile__and__settings div {
+    padding-top: 20px;
+}
+
+.profile__and__settings img{
+    margin-right: 10px;
+}
+
+.profile__first__block{
+    width: 100%;
+}
+.profile__change__name input {
+    color: #ABABAB7D;
+    border: 1px solid #ABABAB7D;
+    height: 43px;
+    width: 296px;
+    border-radius: 4px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.profile__change__name input::placeholder {
+    color: #ABABAB;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.profile__first__block {
+    margin-top: 20px !important;
+}
+.profile__change__name {
+    margin-top: 10px;
+    text-align: left;
+}
+.profile__change__name p {
+    margin-bottom: 10px;
+}
+.profile__change__name input {
+    margin-bottom: 10px;
+}

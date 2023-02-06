@@ -1,11 +1,11 @@
 .todo__sidebar {
     background-color: #F9F9F9;
-    height: 90vh;
     width: 270px;
 }
 
 .links {
     padding-top: 30px;
+    padding-bottom: 67.5vh;
 }
 
 .links div {

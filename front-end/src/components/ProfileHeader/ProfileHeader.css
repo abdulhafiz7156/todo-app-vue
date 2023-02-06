@@ -18,3 +18,41 @@
     height: 55px;
     width: 55px;
 }
+.overlay__div {
+    position: fixed;
+    z-index: 9998;
+    top: 81px;
+    left: 78%;
+    border: 1px solid #D7D7D7;
+    border-radius: 16px;
+    height: 117px;
+    width: 242px;
+}
+.popup__profile__and__settings p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #040404;
+    padding-left: 7px;
+}
+.popup__profile {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.popup__logout {
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.popup__logout p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FF4F5A;
+    padding-left: 7px;
+}
+.popup__profile__and__settings div {
+    border-bottom: 2px solid #D7D7D7;
+    padding-bottom: 10px;
+}

@@ -56,7 +56,7 @@ export default {
     },
     getDataUser(){
       let options = {
-        url: 'http://127.0.0.1:8000/edit/profile/',
+        url: 'http://127.0.0.1:8000/api/edit/profile/',
         method: 'PATCH',
         headers: {
           'Content-Type': 'multipart/form-data',

@@ -13,7 +13,7 @@
             <input type="password" placeholder="Password" v-model="this.signupData.password" :class='this.minLengthPassword ? "active__password" : ""'>
             <p v-if="this.formRequiredFields.minLengthPassword" class="minLengthPassword">Minimal length of password is 6 letters (numbers, symbols)</p>
           </div>
-          <button class="base__button__in__home__page" @click="handleSubmit">Signup</button>
+          <button class="base__button__in__home__page" @click="handleSubmit">Register</button>
         </div>
         <div class="login__div__hr__to__signup">
           <hr>
@@ -50,7 +50,7 @@ export default {
   methods: {
     handleSubmit(){
       let options = {
-        url: 'http://127.0.0.1:8000/register/',
+        url: 'http://127.0.0.1:8000/api/register/',
         method: 'POST',
           headers: {
             'Content-Type': 'multipart/form-data',

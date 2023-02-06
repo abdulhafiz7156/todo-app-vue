@@ -38,7 +38,7 @@
       <div class="last__block__bg"></div>
       <div class="last__block__text">
         <h1>Achieve your target <br> and won your life</h1>
-        <a href="" class="base__button__in__home__page">Get started</a>
+        <a href="/register" class="base__button__in__home__page">Get started</a>
       </div>
     </div>
     <Footer />

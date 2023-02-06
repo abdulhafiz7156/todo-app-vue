@@ -46,7 +46,7 @@ export default {
   methods: {
     login() {
       let options = {
-        url: 'http://127.0.0.1:8000/login/',
+        url: 'http://127.0.0.1:8000/api/login/',
         method: 'POST',
         headers: {
           'Content-Type': 'multipart/form-data',

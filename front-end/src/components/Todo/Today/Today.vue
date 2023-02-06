@@ -26,7 +26,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.625 21.9375C1.625 22.584 1.88181 23.204 2.33893 23.6611C2.79605 24.1182 3.41603 24.375 4.0625 24.375H21.9375C22.584 24.375 23.204 24.1182 23.6611 23.6611C24.1182 23.204 24.375 22.584 24.375 21.9375V12.1875C24.375 11.972 24.2894 11.7653 24.137 11.613C23.9847 11.4606 23.778 11.375 23.5625 11.375C23.347 11.375 23.1403 11.4606 22.988 11.613C22.8356 11.7653 22.75 11.972 22.75 12.1875V21.9375C22.75 22.153 22.6644 22.3597 22.512 22.512C22.3597 22.6644 22.153 22.75 21.9375 22.75H4.0625C3.84701 22.75 3.64035 22.6644 3.48798 22.512C3.3356 22.3597 3.25 22.153 3.25 21.9375V4.0625C3.25 3.84701 3.3356 3.64035 3.48798 3.48798C3.64035 3.3356 3.84701 3.25 4.0625 3.25H14.625C14.8405 3.25 15.0472 3.1644 15.1995 3.01202C15.3519 2.85965 15.4375 2.65299 15.4375 2.4375C15.4375 2.22201 15.3519 2.01535 15.1995 1.86298C15.0472 1.7106 14.8405 1.625 14.625 1.625H4.0625C3.41603 1.625 2.79605 1.88181 2.33893 2.33893C1.88181 2.79605 1.625 3.41603 1.625 4.0625V21.9375Z" fill="#8E8E8E"/>
               </svg>
             </div>
-            <div class="task__delete" @click="deletePopupOpen(task.id)">
+            <div class="task__delete" @click="deletePopupOpen(task)">
               <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_144_128)">
                   <path d="M2.8125 1.125C2.51413 1.125 2.22798 1.24353 2.017 1.4545C1.80603 1.66548 1.6875 1.95163 1.6875 2.25V3.375C1.6875 3.67337 1.80603 3.95952 2.017 4.1705C2.22798 4.38147 2.51413 4.5 2.8125 4.5H3.375V14.625C3.375 15.2217 3.61205 15.794 4.03401 16.216C4.45597 16.6379 5.02826 16.875 5.625 16.875H12.375C12.9717 16.875 13.544 16.6379 13.966 16.216C14.3879 15.794 14.625 15.2217 14.625 14.625V4.5H15.1875C15.4859 4.5 15.772 4.38147 15.983 4.1705C16.194 3.95952 16.3125 3.67337 16.3125 3.375V2.25C16.3125 1.95163 16.194 1.66548 15.983 1.4545C15.772 1.24353 15.4859 1.125 15.1875 1.125H11.25C11.25 0.826631 11.1315 0.540483 10.9205 0.329505C10.7095 0.118526 10.4234 0 10.125 0L7.875 0C7.57663 0 7.29048 0.118526 7.0795 0.329505C6.86853 0.540483 6.75 0.826631 6.75 1.125H2.8125ZM6.1875 5.625C6.33668 5.625 6.47976 5.68426 6.58525 5.78975C6.69074 5.89524 6.75 6.03832 6.75 6.1875V14.0625C6.75 14.2117 6.69074 14.3548 6.58525 14.4602C6.47976 14.5657 6.33668 14.625 6.1875 14.625C6.03832 14.625 5.89524 14.5657 5.78975 14.4602C5.68426 14.3548 5.625 14.2117 5.625 14.0625V6.1875C5.625 6.03832 5.68426 5.89524 5.78975 5.78975C5.89524 5.68426 6.03832 5.625 6.1875 5.625ZM9 5.625C9.14918 5.625 9.29226 5.68426 9.39775 5.78975C9.50324 5.89524 9.5625 6.03832 9.5625 6.1875V14.0625C9.5625 14.2117 9.50324 14.3548 9.39775 14.4602C9.29226 14.5657 9.14918 14.625 9 14.625C8.85082 14.625 8.70774 14.5657 8.60225 14.4602C8.49676 14.3548 8.4375 14.2117 8.4375 14.0625V6.1875C8.4375 6.03832 8.49676 5.89524 8.60225 5.78975C8.70774 5.68426 8.85082 5.625 9 5.625ZM12.375 6.1875V14.0625C12.375 14.2117 12.3157 14.3548 12.2102 14.4602C12.1048 14.5657 11.9617 14.625 11.8125 14.625C11.6633 14.625 11.5202 14.5657 11.4148 14.4602C11.3093 14.3548 11.25 14.2117 11.25 14.0625V6.1875C11.25 6.03832 11.3093 5.89524 11.4148 5.78975C11.5202 5.68426 11.6633 5.625 11.8125 5.625C11.9617 5.625 12.1048 5.68426 12.2102 5.78975C12.3157 5.89524 12.375 6.03832 12.375 6.1875Z" fill="#8E8E8E"/>
@@ -41,6 +41,7 @@
           </div>
         </div>
       </div>
+      <p v-if="tasks.length === 0">You don't have any task for this day</p>
     </div>
     <div class="today__add__tasks__div">
       <div class="today__add__tasks df_ai" v-if="!this.addNewTaskVariable" @click="this.addNewTaskVariable = true">
@@ -69,7 +70,7 @@
         After removal
         this process cannot be undone.</p>
       <div class="modal__btn__div">
-        <button class="apply" @click="deleteTask  ">Delete</button>
+        <button class="apply" @click="deleteTask(this.willDeleteTask)">Delete</button>
         <button class="cancel" @click="showModal = false">Cancel</button>
       </div>
     </div>
@@ -82,7 +83,7 @@
       <input type="text" v-model="this.willEditTask.title">
       <input type="text" v-model="this.willEditTask.text" >
       <div class="modal__btn__div">
-          <button class="apply" @click="editTask()">Edit</button>
+          <button class="apply" @click="editTask(this.willEditTask.id)">Edit</button>
           <button class="cancel" @click="showModalEdit = false">Cancel</button>
       </div>
     </div>
@@ -104,14 +105,7 @@ export default {
         description: '',
         completed: false
       },
-      tasks: [
-        {
-          id: 1,
-          title: "Cooking a salmon sushi",
-          description: '1Salmon and tuna i think is good for dinner, i wanna make it today :D Salmon and tuna i think is good for dinner, i wanna make it today :D Salmon and tuna i think is good for dinner, i wanna make it today :D',
-          completed: true,
-        },
-      ],
+      tasks: [],
       completedTasks: [],
       addNewTaskVariable: false,
       showModal: false,
@@ -119,14 +113,15 @@ export default {
       newTaskInputsEmpty: false,
       deleteTaskId: null,
       willEditTask: null,
-      userData: [],
-      userToken: this.$cookies.get('token')
+      willDeleteTask: null,
+      userToken: this.$cookies.get('token'),
     }
   },
   methods: {
+
     getTaskUsers(){
         let options = {
-          url: 'http://127.0.0.1:8000/all/task/',
+          url: 'http://127.0.0.1:8000/api/all/task/',
           method: 'GET',
           headers: {
             'Content-Type': 'multipart/form-data',
@@ -142,9 +137,21 @@ export default {
               console.log(error)
             })
     },
+    addNewTask() {
+      if(!this.newTask.title || !this.newTask.description){
+        this.newTaskInputsEmpty = true
+        console.log("hishtima yozmadin chort")
+      } else {
+        this.createTask()
+        this.newTask = {
+          title: '',
+          description: ''
+        }
+      }
+    },
     createTask(){
         let options = {
-          url: 'http://127.0.0.1:8000/create/task/',
+          url: 'http://127.0.0.1:8000/api/create/task/',
           method: 'POST',
           headers: {
             'Content-Type': 'multipart/form-data',
@@ -165,26 +172,55 @@ export default {
               console.log(error)
             })
     },
-    editTask2() {
+    editTask(id) {
       let options = {
-        url: 'http://127.0.0.1:8000/create/task/',
-        method: 'POST',
+        url: `http://127.0.0.1:8000/api/edit/task/${id}/`,
+        method: 'PATCH',
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `token ${this.userToken}`,
         },
         data: {
-          title: this.newTask.title,
-          description: this.newTask.description,
+          title: this.willEditTask.title,
+          description: this.willEditTask.text ,
         }
       };
       axios(options)
           .then(response =>  {
+            this.showModalEdit = false
+
             console.log(response)
+            console.log("ishladiyu")
           })
           .catch((error) => {
             console.log(error)
           })
+    },
+    deleteTask(task){
+      let options = {
+        url: `http://127.0.0.1:8000/api/delete/task/${task.id}/`,
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          'Authorization': `token ${this.userToken}`,
+        },
+      };
+      axios(options)
+          .then(response =>  {
+            this.tasks = this.tasks.filter(item => item.id !== task.id)
+            this.showModal = false
+          })
+          .catch((error) => {
+            console.log(error)
+          })
+    },
+    deletePopupOpen(task) {
+      this.showModal = true
+      this.willDeleteTask = task
+    },
+    editPopupOpen(task) {
+      this.showModalEdit = true
+      this.willEditTask = task
     },
     testCompletedTasks(task){
       // if (task.completed === true) {
@@ -199,36 +235,6 @@ export default {
       //   }
       // })
     },
-    addNewTask() {
-      if(!this.newTask.title || !this.newTask.description){
-        this.newTaskInputsEmpty = true
-        console.log("hishtima yozmadin chort")
-      } else {
-        this.createTask()
-        this.newTask = {
-          title: '',
-          description: ''
-        }
-      }
-    },
-    editTask(){
-      this.showModalEdit = false
-      this.$router.push('/todo')
-    },
-    deleteTask(){
-      this.tasks = this.tasks.filter(item => item.id !== this.deleteTaskId)
-      this.showModal = false
-    },
-    deletePopupOpen(id) {
-      this.showModal = true
-      this.deleteTaskId = id
-    },
-    editPopupOpen(task) {
-      this.showModalEdit = true
-      // this.willEditTask = task
-      console.log(task)
-      this.editTask2()
-    }
   },
   mounted() {
     this.getTaskUsers()

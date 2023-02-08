@@ -13,7 +13,7 @@
             <input type="password" placeholder="Password" v-model="this.signupData.password" :class='this.minLengthPassword ? "active__password" : ""'>
             <p v-if="this.formRequiredFields.minLengthPassword" class="minLengthPassword">Minimal length of password is 6 letters (numbers, symbols)</p>
           </div>
-          <button class="base__button__in__home__page" @click="handleSubmit">Register</button>
+          <button class="base__button__in__home__page" @click="handleSubmit"><Register></Register></button>
         </div>
         <div class="login__div__hr__to__signup">
           <hr>
@@ -69,7 +69,6 @@ export default {
                 console.log(response)
                 router.push({ name: "todo" });
                 this.$cookies.set('token' , response.data.token, "1m")
-                // VueCookies.set('token' , response.data.token, "1m")
               });
           } else {
             this.formRequiredFields.EmptyUserName = true

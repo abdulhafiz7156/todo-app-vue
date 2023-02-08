@@ -5,6 +5,7 @@ export default createStore({
     userToken: null
   },
   getters: {
+
   },
   mutations: {
   },

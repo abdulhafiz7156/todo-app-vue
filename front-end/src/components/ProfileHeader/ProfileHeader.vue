@@ -94,9 +94,15 @@ export default {
             console.log(error)
           })
     },
+    // testUser() {
+    //   if (this.userToken) {
+    //     this.$router.push('/')
+    //   }
+    // }
   },
   created() {
     this.getDataUser()
+    // this.testUser()
   },
 }
 </script>

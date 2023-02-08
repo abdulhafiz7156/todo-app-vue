@@ -6,8 +6,8 @@
     </div>
     <div class="today__tasks">
       <div class="task df" v-for="task in tasks" :key="task.id">
-        <div class="round" @click="testCompletedTasks(task)">
-          <input type="checkbox" :id="task.id" v-model="task.completed" />
+        <div class="round"  @click="testCompletedTasks(task.completed)" >
+          <input type="checkbox" :id="task.id" v-model="task.completed"/>
           <label :for="task.id"></label>
         </div>
         <div class="task__text__crud df_jscpb_ai">
@@ -118,7 +118,6 @@ export default {
     }
   },
   methods: {
-
     getTaskUsers(){
         let options = {
           url: 'http://127.0.0.1:8000/api/all/task/',
@@ -223,21 +222,37 @@ export default {
       this.willEditTask = task
     },
     testCompletedTasks(task){
-      // if (task.completed === true) {
-      //       this.completedTasks.push(task)
-      //   console.log(this.completedTasks)
-      //   console.log("hello")
-      // }
       console.log(task)
-      // this.completedTasks = this.tasks.filter(completed => {
-      //   if (completed.completed === true) {
-      //     return true
-      //   }
-      // })
+      let options = {
+        url: `http://127.0.0.1:8000/api/edit/task/${id}/`,
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          'Authorization': `token ${this.userToken}`,
+        },
+        data: {
+          completed: task
+        }
+      };
+      axios(options)
+          .then(response =>  {
+            console.log(response)
+            console.log("ishladiyu")
+          })
+          .catch((error) => {
+            console.log(error)
+          })
     },
+    testUser() {
+      if (this.userToken) {
+        this.$router.push('/')
+      }
+    }
+
   },
   mounted() {
     this.getTaskUsers()
+    // this.testUser()
   },
   }
 </script>

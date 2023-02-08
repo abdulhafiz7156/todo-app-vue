@@ -55,6 +55,8 @@ export default {
   components: {
     Footer,
     Header
+  },
+  mounted() {
   }
 }
 </script>
@@ -137,6 +139,33 @@ export default {
 
 .last__block__text {
   margin-left: 70px;
+}
+@media(max-width: 1200px) {
+  .last__block__text {
+    margin-left: 40px;
+  }
+  .last__block__text h1 {
+    width: 422px;
+  }
+  .last__block__bg {
+    height: 235px;
+  }
+}
+@media(max-width: 1100px) {
+  .last__block__text {
+    margin-left: 40px;
+  }
+  .last__block__text h1 {
+    width: 350px;
+    font-size: 39px;
+  }
+  .last__block__bg {
+    height: 235px;
+  }
+  .first__block__bg__div {
+    height: 565px;
+    width: 1092px;
+  }
 }
 
 </style>

@@ -76,8 +76,14 @@ export default {
             console.log(error)
           })
     },
+    // testUser() {
+    //   if (this.userToken) {
+    //     this.$router.push('/')
+    //   }
+    // }
   },
   mounted() {
+    // this.testUser()
   }
 }
 </script>

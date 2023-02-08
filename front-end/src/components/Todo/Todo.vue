@@ -67,9 +67,16 @@ export default {
   methods: {
     activeTodoLinks(item) {
       this.activeTodoLinksClass = item
-    }
+    },
+    // testUser() {
+    //   if (this.userToken) {
+    //     this.$router.push('/')
+    //   }
+    // }
+
   },
   mounted() {
+    // this.testUser()
   },
   components: {Today, ProfileHeader, Yesterday},
 }
